@@ -112,34 +112,34 @@ $EndComp
 $Comp
 L pspice:R R8
 U 1 1 60B01F9C
-P 6875 1425
-F 0 "R8" V 6670 1425 50  0000 C CNN
-F 1 "Fan" V 6761 1425 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6875 1425 50  0001 C CNN
-F 3 "~" H 6875 1425 50  0001 C CNN
-	1    6875 1425
-	0    1    1    0   
+P 7125 1375
+F 0 "R8" V 6920 1375 50  0000 C CNN
+F 1 "Fan" V 7011 1375 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7125 1375 50  0001 C CNN
+F 3 "~" H 7125 1375 50  0001 C CNN
+	1    7125 1375
+	-1   0    0    1   
 $EndComp
 $Comp
 L pspice:R R5
 U 1 1 60B02699
-P 4475 1425
-F 0 "R5" V 4270 1425 50  0000 C CNN
-F 1 "Heating" V 4361 1425 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4475 1425 50  0001 C CNN
-F 3 "~" H 4475 1425 50  0001 C CNN
-	1    4475 1425
-	0    1    1    0   
+P 4800 1375
+F 0 "R5" V 4595 1375 50  0000 C CNN
+F 1 "Heating" V 4686 1375 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4800 1375 50  0001 C CNN
+F 3 "~" H 4800 1375 50  0001 C CNN
+	1    4800 1375
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 60B02D22
-P 825 1425
-F 0 "J1" H 717 1100 50  0000 C CNN
-F 1 "ToArduino" H 717 1191 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 825 1425 50  0001 C CNN
-F 3 "~" H 825 1425 50  0001 C CNN
-	1    825  1425
+P 800 1125
+F 0 "J1" H 692 800 50  0000 C CNN
+F 1 "ToArduino" H 692 891 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 800 1125 50  0001 C CNN
+F 3 "~" H 800 1125 50  0001 C CNN
+	1    800  1125
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -147,13 +147,13 @@ Wire Notes Line
 $Comp
 L pspice:DIODE D1
 U 1 1 60B0CC70
-P 6875 1050
-F 0 "D1" H 6875 785 50  0000 C CNN
-F 1 "DIODE" H 6875 876 50  0000 C CNN
-F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 6875 1050 50  0001 C CNN
-F 3 "~" H 6875 1050 50  0001 C CNN
-	1    6875 1050
-	-1   0    0    1   
+P 7600 1400
+F 0 "D1" H 7600 1135 50  0000 C CNN
+F 1 "DIODE" H 7600 1226 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp" H 7600 1400 50  0001 C CNN
+F 3 "~" H 7600 1400 50  0001 C CNN
+	1    7600 1400
+	0    -1   -1   0   
 $EndComp
 Wire Notes Line
 	3050 675  3050 2425
@@ -194,18 +194,6 @@ Wire Wire Line
 Connection ~ 6675 2200
 Wire Wire Line
 	6675 2200 6825 2200
-Wire Wire Line
-	7125 1425 7125 1900
-Wire Wire Line
-	7075 1050 7125 1050
-Wire Wire Line
-	7125 1050 7125 1425
-Connection ~ 7125 1425
-Wire Wire Line
-	6675 1050 6625 1050
-Wire Wire Line
-	6625 1050 6625 1425
-Connection ~ 6625 1425
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 60B16363
@@ -388,13 +376,6 @@ Wire Wire Line
 Connection ~ 4800 5075
 Wire Wire Line
 	4800 5075 4325 5075
-Wire Wire Line
-	4725 1425 4800 1425
-Wire Wire Line
-	4800 1900 4800 1425
-Connection ~ 4800 1425
-Wire Wire Line
-	4800 1425 6625 1425
 Text Notes 550  1550 0    35   Italic 7
 To Vin/GND of Arduino
 Text Notes 550  2625 0    35   Italic 7
@@ -416,20 +397,20 @@ Wire Notes Line
 Wire Notes Line
 	2275 600  2275 1575
 Wire Wire Line
-	1425 1325 1025 1325
+	1400 1025 1000 1025
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 60B67757
-P 1425 800
-F 0 "J3" H 1317 475 50  0000 C CNN
-F 1 "Power12V" H 1317 566 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1425 800 50  0001 C CNN
-F 3 "~" H 1425 800 50  0001 C CNN
-	1    1425 800 
+P 1400 650
+F 0 "J3" H 1175 350 50  0000 C CNN
+F 1 "Power12V" H 1200 425 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1400 650 50  0001 C CNN
+F 3 "~" H 1400 650 50  0001 C CNN
+	1    1400 650 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1425 1000 1425 1325
+	1400 850  1400 1025
 Wire Wire Line
 	6050 4550 6050 4375
 Wire Wire Line
@@ -459,12 +440,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2300 2775 2300
 Wire Wire Line
-	1025 1425 1525 1425
-Wire Wire Line
-	1525 1000 1525 1425
-Connection ~ 1525 1425
-Wire Wire Line
-	1525 1425 4225 1425
+	1000 1125 1500 1125
 $Comp
 L pspice:R R6
 U 1 1 60B1AC9D
@@ -476,4 +452,28 @@ F 3 "~" H 5850 3700 50  0001 C CNN
 	1    5850 3700
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1500 850  1500 1125
+Wire Wire Line
+	4800 1125 1500 1125
+Connection ~ 1500 1125
+Wire Wire Line
+	4800 1625 4800 1900
+Wire Wire Line
+	4800 1125 7125 1125
+Connection ~ 4800 1125
+Wire Wire Line
+	7125 1625 7125 1675
+Wire Wire Line
+	7600 1200 7600 1125
+Wire Wire Line
+	7600 1125 7125 1125
+Connection ~ 7125 1125
+Wire Wire Line
+	7600 1600 7600 1675
+Wire Wire Line
+	7600 1675 7125 1675
+Connection ~ 7125 1675
+Wire Wire Line
+	7125 1675 7125 1900
 $EndSCHEMATC
