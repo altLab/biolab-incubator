@@ -9,3 +9,7 @@ The kicad drawings don't have real footprint assignment, they are first proposal
 They are only for rendering purposes
 
 Consider it a **WIP** stage
+
+# Version 1.0
+
+![Render](https://github.com/altLab/biolab-incubator/blob/main/photos/Controller_V1_1.png)
